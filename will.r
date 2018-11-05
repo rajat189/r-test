@@ -1,6 +1,4 @@
 library(RPostgreSQL);
-library(dplyr);
-library(e1071);
 
 USERNAME = Sys.getenv('REDSHIFT_USERNAME')
 PASSWORD = Sys.getenv('REDSHIFT_PASSWORD')
