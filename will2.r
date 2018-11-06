@@ -1,5 +1,4 @@
 library(RPostgreSQL);
-library(dplyr);
 
 USERNAME = Sys.getenv('REDSHIFT_USERNAME')
 PASSWORD = Sys.getenv('REDSHIFT_PASSWORD')
@@ -9,10 +8,10 @@ print(PASSWORD)
 print(HOST)
 
 con <- dbConnect(dbDriver("PostgreSQL"),
-                  dbname = "ewantest",
+                  dbname = "shaitest",
                   host = HOST,
                   port = 5439,
                   user = USERNAME,
                   password = PASSWORD
 )
-dbGetQuery(con,"SELECT * FROM publish.checkout;")
+dbGetQuery(con,"INSERT INTO publish.sample (name, email) VALUES('sxcdf', 'vfrtg@grfds.com');")
