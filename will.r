@@ -1,4 +1,5 @@
 library(RPostgreSQL);
+library(h2o);
 
 USERNAME = Sys.getenv('REDSHIFT_USERNAME')
 PASSWORD = Sys.getenv('REDSHIFT_PASSWORD')
