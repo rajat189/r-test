@@ -8,7 +8,7 @@ print(PASSWORD)
 print(HOST)
 
 con <- dbConnect(dbDriver("PostgreSQL"),
-                  dbname = "shaitest",
+                  dbname = "diwali",
                   host = HOST,
                   port = 5439,
                   user = USERNAME,
